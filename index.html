@@ -2,433 +2,62 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Перевод в РГУ им. А.Н. Косыгина</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Шапка -->
-    <header class="header">
-        <div class="container">
-            <div class="header-top">
-                <img src="images/block-top.png" alt="РГУ им. А.Н. Косыгина" class="header-logo">
-                <nav class="nav">
-                    <a href="#transfer" class="nav-link">Процесс перевода</a>
-                    <a href="#docs" class="nav-link">Документы</a>
-                    <a href="#why" class="nav-link">Почему РГУ</a>
-                    <a href="#contacts" class="nav-link">Контакты</a>
-                </nav>
-                <button class="btn-contact" id="contactBtn">
-                    <i class="fas fa-phone-alt"></i> Связаться
-                </button>
-            </div>
-            
-            <div class="hero">
-                <img src="images/block-hero.png" alt="Перевод в РГУ им. А.Н. Косыгина" class="hero-image">
-                <div class="hero-content">
-                    <h1 class="hero-title">Перевод в РГУ им. А.Н. Косыгина</h1>
-                    <p class="hero-subtitle">Подробное руководство по переводу из других высших учебных заведений. Следуйте нашим рекомендациям для успешного зачисления.</p>
-                    <div class="hero-buttons">
-                        <button class="btn-primary" id="startProcessBtn">
-                            <i class="fas fa-play-circle"></i> Начать процесс
-                        </button>
-                        <button class="btn-secondary" id="contactBtn2">
-                            <i class="fas fa-comments"></i> Связаться
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- Важное ограничение -->
-    <section class="section warning-section">
-        <div class="container">
-            <div class="warning-card">
-                <div class="warning-icon">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </div>
-                <div class="warning-content">
-                    <h3 class="warning-title">Важное ограничение</h3>
-                    <p class="warning-text">У абитуриента должна быть академическая разница не больше 8-ми предметов по специальности, куда он переводится. В противном случае в переводе могут отказать.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HEADER -->
+<header class="header">
+    <img src="img/logo.png" alt="Логотип" class="logo">
+    <nav class="nav">
+        <a href="#">Абитуриенту</a>
+        <a href="#">Университет</a>
+        <a href="#">Студентам</a>
+        <a href="#">Наука</a>
+        <a href="#">Контакты</a>
+    </nav>
+</header>
 
-    <!-- Предварительный этап -->
-    <section class="section prestage-section" id="transfer">
-        <div class="container">
-            <h2 class="section-title">Предварительный этап</h2>
-            <div class="prestage-grid">
-                <div class="prestage-card">
-                    <h3 class="prestage-card-title">Проверка вакантных мест</h3>
-                    <p>Узнайте о наличии вакантных бюджетных мест (если перевод планируется на бюджет) и общих вакантных местах. Информация доступна на сайте: <a href="https://rguk.ru" target="_blank">rguk.ru</a> → Абитуриенту → Перевод из другого ВУЗа → Вакантные места</p>
-                </div>
-                
-                <div class="prestage-card">
-                    <h3 class="prestage-card-title">Связь с деканатом</h3>
-                    <ul class="contact-list">
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:itet@rguk.ru">itet@rguk.ru</a></li>
-                        <li><i class="fas fa-phone"></i> +7 (495) 811-01-01 (Александра Максимовна)</li>
-                    </ul>
-                    <p class="prestage-note"><i class="fas fa-paper-plane"></i> Отправьте предварительно: Справку об обучении (с оценками)</p>
-                </div>
-                
-                <div class="prestage-card">
-                    <h3 class="prestage-card-title">Обязательно укажите при обращении</h3>
-                    <ul class="checklist">
-                        <li><i class="fas fa-check-circle"></i> Направление и профиль подготовки</li>
-                        <li><i class="far fa-circle"></i> Форму обучения (очная/заочная/вечерняя)</li>
-                        <li><i class="far fa-circle"></i> Курс / семестр перевода</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="section hero">
+    <img src="img/block-top.png" alt="Главный блок">
+</section>
 
-    <!-- Основная процедура -->
-    <section class="section docs-section" id="docs">
-        <div class="container">
-            <h2 class="section-title">Основная процедура</h2>
-            <p class="section-subtitle">Подготовка и подача документов</p>
-            
-            <div class="docs-grid">
-                <div class="docs-card">
-                    <div class="docs-card-header">
-                        <i class="fas fa-file-alt"></i>
-                        <h3>Комплект документов для приёмной комиссии</h3>
-                    </div>
-                    <ul class="docs-list">
-                        <li><i class="fas fa-copy"></i> Копия паспорта (фото + прописка)</li>
-                        <li><i class="fas fa-id-card"></i> Копия СНИЛС</li>
-                        <li><i class="fas fa-certificate"></i> <strong>Справка о статусе студента</strong> (оригинал, дата — текущий месяц)</li>
-                        <li><i class="fas fa-calendar-alt"></i> <strong>Справка о периоде обучения</strong> (оригинал, дата — текущий месяц)</li>
-                        <li><i class="fas fa-stamp"></i> <strong>Копии лицензии и аккредитации ВУЗа</strong> (заверенные, только для негосударственных ВУЗов)</li>
-                        <li><i class="fas fa-edit"></i> <strong>Заявление по форме</strong> (скачать на сайте в разделе «Перевод из другого ВУЗа»)</li>
-                        <li><i class="fas fa-user-check"></i> <strong>Согласие на обработку персональных данных</strong> (скачать на сайте в разделе «Перевод из другого ВУЗа»)</li>
-                    </ul>
-                </div>
-                
-                <div class="docs-card">
-                    <img src="images/block-docs.png" alt="Документы для перевода" class="docs-image">
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- TRANSFER INFO -->
+<section class="section hover-block">
+    <img src="img/block-transfer.png" alt="Перевод">
+</section>
 
-    <!-- После положительного решения -->
-    <section class="section steps-section">
-        <div class="container">
-            <h2 class="section-title">После положительного решения</h2>
-            <p class="section-subtitle">Поздравляем! Ваше заявление о переводе в РГУ им. А.Н. Косыгина получило положительное решение. Теперь вам предстоит пройти следующие этапы для завершения процедуры зачисления:</p>
-            
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Получите в РГУ им. А.Н. Косыгина</h3>
-                        <p>Справку о принятии на перевод (от Приемной комиссии РГУ им.А.Н.Косыгина)</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>В своём ВУЗе</h3>
-                        <p>Приложите справку из п.1 Напишите заявление об отчислении в порядке перевода</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>После издания приказа об отчислении</h3>
-                        <p>Получите выписку из приказа об отчислении Заберите оригинал аттестата/диплома</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Возвращаемся в РГУ им. А.Н. Косыгина</h3>
-                        <p>Предоставьте выписку из приказа об отчислении в Приемную комиссию. Ожидайте приказа о зачислении в порядке перевода</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- WHY US -->
+<section class="section hover-block">
+    <img src="img/Frame 8.png" alt="Почему мы">
+</section>
 
-    <!-- После зачисления -->
-    <section class="section enrollment-section">
-        <div class="container">
-            <div class="enrollment-card">
-                <h2 class="section-title">После зачисления</h2>
-                <p class="enrollment-subtitle">Поздравляем с зачислением! Осталось выполнить последние шаги для начала обучения</p>
-                
-                <div class="enrollment-steps">
-                    <div class="enrollment-step">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>Приступите к обучению</h3>
-                        <p>Начните посещать занятия по расписанию вашей группы</p>
-                    </div>
-                    
-                    <div class="enrollment-step">
-                        <i class="fas fa-book"></i>
-                        <h3>Согласуйте академическую разницу</h3>
-                        <p>Обратитесь в деканат для ликвидации академической разницы</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- REVIEWS -->
+<section class="section hover-block">
+    <img src="img/block-reviews.png" alt="Отзывы">
+</section>
 
-    <!-- Почему РГУ -->
-    <section class="section why-section" id="why">
-        <div class="container">
-            <h2 class="section-title">Почему РГУ им. А.Н. Косыгина - Ваш идеальный трансфер?</h2>
-            <p class="why-subtitle">Устал от скучных стен и неудобств? Переводись в РГУ им. А.Н. Косыгина и открывай новый уровень студенческой жизни!</p>
-            
-            <div class="why-grid">
-                <div class="why-card">
-                    <img src="images/block-transfer.png" alt="Твой IT-хаб" class="why-image">
-                    <h3>Твой IT-хаб, где вайб – это стандарт</h3>
-                </div>
-                
-                <div class="why-features">
-                    <div class="feature">
-                        <i class="fas fa-subway"></i>
-                        <div class="feature-content">
-                            <h4>Здание рядом с метро</h4>
-                            <p>Вышел – и ты в кампусе. Экономь время, наслаждайся комфортом с первого шага.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature">
-                        <i class="fas fa-couch"></i>
-                        <div class="feature-content">
-                            <h4>Комфорт для всех</h4>
-                            <p>Продуманные зоны отдыха включая цивилизованное место для передышек.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature">
-                        <i class="fas fa-palette"></i>
-                        <div class="feature-content">
-                            <h4>Дизайн, который вдохновляет</h4>
-                            <p>Забудь о серых стенах. У нас стильные, светлые пространства для учебы и жизни.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature">
-                        <i class="fas fa-laptop-house"></i>
-                        <div class="feature-content">
-                            <h4>Твой личный коворкинг</h4>
-                            <p>Кафетерии с Wi-Fi, розетками и уютными зонами. Работай, общайся, перезагружайся с ноутом.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="why-cta">
-                <p><strong>Переходи в РГУ им. А.Н. Косыгина – там, где твой потенциал расцветает в комфорте и стиле!</strong></p>
-            </div>
-        </div>
-    </section>
+<!-- STEPS -->
+<section class="section hover-block">
+    <img src="img/steps-empty.png" alt="Этапы поступления">
+</section>
 
-    <!-- Полезные советы -->
-    <section class="section tips-section">
-        <div class="container">
-            <div class="tips-header">
-                <h2 class="section-title">Полезные советы</h2>
-                <img src="images/block-recommendations.png" alt="Советы" class="tips-image">
-            </div>
-            
-            <div class="tips-grid">
-                <div class="tip-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>Следите за сроками</h3>
-                    <p>Отправляйте документы заранее, до окончания срока приёма (уточняйте дедлайны на rguk.ru)</p>
-                </div>
-                
-                <div class="tip-card">
-                    <i class="fas fa-copy"></i>
-                    <h3>Сохраняйте копии</h3>
-                    <p>Сохраняйте копии всех отправленных документов для вашего архива</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- RECOMMENDATIONS -->
+<section class="section hover-block">
+    <img src="img/block-recommendations.png" alt="Полезные советы">
+</section>
 
-    <!-- Отзывы -->
-    <section class="section reviews-section">
-        <div class="container">
-            <h2 class="section-title">Отзывы тех, кто уже перевелся</h2>
-            <img src="images/block-reviews.png" alt="Отзывы" class="reviews-image">
-            
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">
-                            <i class="fas fa-user-circle"></i>
-                        </div>
-                        <div class="review-author">
-                            <h4>Анна С.</h4>
-                            <p>Перевелась с 2 курса МГУПП</p>
-                        </div>
-                    </div>
-                    <p class="review-text">"Процесс перевода был организован четко и понятно. Кураторы помогали на каждом этапе, все документы оформили быстро."</p>
-                </div>
-                
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">
-                            <i class="fas fa-user-circle"></i>
-                        </div>
-                        <div class="review-author">
-                            <h4>Максим К.</h4>
-                            <p>Перевелся с 3 курса РАНХиГС</p>
-                        </div>
-                    </div>
-                    <p class="review-text">"Инфраструктура университета впечатляет. Особенно понравились современные коворкинги и библиотека с цифровыми ресурсами."</p>
-                </div>
-                
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">
-                            <i class="fas fa-user-circle"></i>
-                        </div>
-                        <div class="review-author">
-                            <h4>Елена В.</h4>
-                            <p>Перевелась с 1 курса МГТУ им. Косыгина</p>
-                        </div>
-                    </div>
-                    <p class="review-text">"Академическую разницу закрыли за один семестр благодаря индивидуальному учебному плану. Преподаватели всегда на связи и готовы помочь."</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- QUESTIONS -->
+<section class="section hover-block">
+    <img src="img/block-any other questions.png" alt="Остались вопросы?">
+</section>
 
-    <!-- Форма заявки -->
-    <section class="section form-section" id="contacts">
-        <div class="container">
-            <div class="form-card">
-                <div class="form-content">
-                    <h2 class="section-title">Сделай шаг к успешному будущему прямо сейчас!</h2>
-                    <p class="form-subtitle">Оставить заявку:</p>
-                    
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <p>+7 XXX XXX XX XX</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-user"></i>
-                            <p>Иванов, Иван</p>
-                        </div>
-                    </div>
-                    
-                    <button class="btn-primary btn-large" id="submitRequestBtn">
-                        <i class="fas fa-paper-plane"></i> Отправить заявку
-                    </button>
-                    
-                    <p class="form-note">Нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
-                </div>
-                
-                <div class="form-image">
-                    <img src="images/block-form.png" alt="Форма заявки">
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 РГУ им. А.Н. Косыгина</p>
+</footer>
 
-    <!-- Остались вопросы -->
-    <section class="section questions-section">
-        <div class="container">
-            <div class="questions-card">
-                <h2 class="section-title">Остались вопросы?</h2>
-                <p class="questions-subtitle">Мы готовы помочь вам на каждом этапе. Свяжитесь с деканатом для получения консультации по вопросам перевода. Наши специалисты ответят на все ваши вопросы.</p>
-                
-                <div class="questions-options">
-                    <div class="question-option">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Написать в деканат</h3>
-                        <p>Отправьте ваш вопрос на электронную почту деканата</p>
-                        <button class="btn-secondary">Написать</button>
-                    </div>
-                    
-                    <div class="question-option">
-                        <i class="fas fa-phone"></i>
-                        <h3>Позвонить</h3>
-                        <p>Свяжитесь с нами по телефону для оперативной консультации</p>
-                        <button class="btn-secondary">Позвонить</button>
-                    </div>
-                </div>
-                
-                <img src="images/block-any other questions.png" alt="Остались вопросы" class="questions-image">
-            </div>
-        </div>
-    </section>
-
-    <!-- Футер -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/logo.png" alt="РГУ им. А.Н. Косыгина">
-                </div>
-                
-                <div class="footer-info">
-                    <h3>РГУ им. А.Н. Косыгина</h3>
-                    <p>Transfer Guide 2025</p>
-                    <p class="footer-copyright">© 2025 Российский государственный университет им. А.Н. Косыгина Технологии. Дизайн. Искусство.</p>
-                </div>
-                
-                <div class="footer-links">
-                    <a href="#transfer">Процесс перевода</a>
-                    <a href="#docs">Документы</a>
-                    <a href="#why">Почему РГУ</a>
-                    <a href="#contacts">Контакты</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Модальное окно -->
-    <div class="modal" id="contactModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Связаться с нами</h2>
-            <p>Заполните форму ниже, и наш специалист свяжется с вами в ближайшее время</p>
-            
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Ваше имя</label>
-                    <input type="text" id="name" placeholder="Иванов Иван" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Номер телефона</label>
-                    <input type="tel" id="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Электронная почта</label>
-                    <input type="email" id="email" placeholder="example@mail.ru" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Ваш вопрос</label>
-                    <textarea id="message" rows="4" placeholder="Расскажите о вашей ситуации..."></textarea>
-                </div>
-                
-                <button type="submit" class="btn-primary">Отправить заявку</button>
-            </form>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
