@@ -5,16 +5,13 @@
 }
 
 body {
-    background: #05080f;
     font-family: Arial, sans-serif;
     color: #fff;
+    background: #000;
 }
 
 /* HEADER */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 20px 40px;
     background: #000;
 }
@@ -23,34 +20,48 @@ body {
     height: 40px;
 }
 
-.nav a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    transition: opacity 0.3s;
-}
-
-.nav a:hover {
-    opacity: 0.7;
-}
-
 /* SECTIONS */
 .section {
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 0 20px;
+    position: relative;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
 }
 
-.section img {
+/* BACKGROUND TILE */
+.bg-90::before,
+.bg--90::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("img/bg/bg-tile.png");
+    background-repeat: repeat;
+    background-size: auto;
+    z-index: 0;
+}
+
+/* ROTATIONS */
+.bg-90::before {
+    transform: rotate(90deg) scale(2);
+}
+
+.bg--90::before {
+    transform: rotate(-90deg) scale(2);
+}
+
+/* CONTENT */
+.section img,
+.footer p {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
     width: 100%;
     border-radius: 20px;
 }
 
-/* HOVER EFFECT FOR BLOCKS */
+/* HOVER EFFECT */
 .hover-block {
     transition: transform 0.3s ease, filter 0.3s ease;
-    cursor: pointer;
 }
 
 .hover-block:hover {
@@ -58,15 +69,10 @@ body {
     filter: brightness(0.9);
 }
 
-/* HERO */
-.hero {
-    margin-top: 40px;
-}
-
 /* FOOTER */
 .footer {
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
     font-size: 14px;
     opacity: 0.7;
 }
