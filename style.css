@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
+    background: #05080f;
     color: #fff;
-    background: #000;
 }
 
 /* HEADER */
@@ -20,7 +20,7 @@ body {
     height: 40px;
 }
 
-/* SECTIONS */
+/* SECTION + BG */
 .section {
     position: relative;
     padding: 80px 20px;
@@ -28,19 +28,15 @@ body {
     justify-content: center;
 }
 
-/* BACKGROUND TILE */
-.bg-90::before,
-.bg--90::before {
+.section::before {
     content: "";
     position: absolute;
     inset: 0;
     background-image: url("img/bg/bg-tile.png");
     background-repeat: repeat;
-    background-size: auto;
     z-index: 0;
 }
 
-/* ROTATIONS */
 .bg-90::before {
     transform: rotate(90deg) scale(2);
 }
@@ -49,30 +45,101 @@ body {
     transform: rotate(-90deg) scale(2);
 }
 
-/* CONTENT */
-.section img,
-.footer p {
+/* BLOCK */
+.block {
     position: relative;
-    z-index: 1;
-    max-width: 1200px;
+    max-width: 1100px;
     width: 100%;
-    border-radius: 20px;
+    z-index: 1;
 }
 
-/* HOVER EFFECT */
+.block-img {
+    width: 100%;
+    display: block;
+    border-radius: 24px;
+}
+
+/* CONTENT OVER IMAGE */
+.block-content {
+    position: absolute;
+    inset: 0;
+    padding: 50px 70px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TEXT */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-top: 15px;
+}
+
+p, li {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+.small {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* HOVER */
 .hover-block {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .hover-block:hover {
     transform: scale(1.02);
-    filter: brightness(0.9);
+    filter: brightness(0.95);
+}
+
+/* BUTTONS */
+.center {
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 14px 28px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
 }
 
 /* FOOTER */
 .footer {
     text-align: center;
-    padding: 60px 20px;
-    font-size: 14px;
-    opacity: 0.7;
+    padding: 40px;
+    opacity: 0.6;
 }
